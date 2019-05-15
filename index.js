@@ -37,7 +37,3 @@ app.get('/', (req, res, next) => {
 app.listen(8080, () => {
   console.log('Example app listening on port 8080!')
 })
-
-// ul
-//         for name in names 
-//           li= name 
