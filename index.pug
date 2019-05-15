@@ -1,0 +1,27 @@
+doctype html
+head
+  meta(charset='utf-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  title
+  meta(name='description' content='')
+  meta(name='viewport' content='width=device-width, initial-scale=1')
+  link(rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' integrity='sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T' crossorigin='anonymous')
+  // <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+.container
+  form.form-inline
+    input.form-control.mr-sm-2(type='search' placeholder='Search' aria-label='Search')
+    button.btn.btn-outline-success.my-2.my-sm-0(type='submit') Search
+
+  table.table.table-striped.table-dark
+    thead
+      tr
+        th(scope='col') #
+        th(scope='col') Name
+        th(scope='col') Url
+    tbody
+      for name in namesAndUrls
+        tr
+          th(scope='row')= name[0]
+          td= name[1]
+          td= name[2]
+script(src='index.js' async='' defer='')
