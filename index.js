@@ -31,7 +31,6 @@ app.get('/', (req, res, next) => {
       })
     })
   })
-  // res.sendFile(__dirname + '/index.pug', {name: 'datum'})
 })
 
 app.listen(8080, () => {
