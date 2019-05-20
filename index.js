@@ -1,6 +1,5 @@
 const express = require('express')
 const app = express()
-// const pug = require('pug')
 let fetch = require('node-fetch')
 app.set('view engine', 'pug')
 app.set("views", __dirname)
